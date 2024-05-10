@@ -10,9 +10,9 @@ public class ComputeAverage {
 
         // Prompt the user to enterr three numbers
         System.out.println("Enter three numbers: ");
-        double number1 = input.nextDouble();
-        double number2 = input.nextDouble();
-        double number3 = input.nextDouble();
+        int number1 = input.nextInt();
+        int number2 = input.nextInt();
+        int number3 = input.nextInt();
 
         // Compute average
         double average = (number1 + number2 + number3) / 3;
