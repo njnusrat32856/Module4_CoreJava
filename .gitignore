@@ -34,5 +34,10 @@
 /TestVoidMethod/build/
 /TestMethodOverloading/nbproject/private/
 /TestMethodOverloading/build/
+<<<<<<< HEAD
 /EvidenceSample1/nbproject/private/
 /EvidenceSample1/build/
+=======
+/TaskThreadDemo/nbproject/private/
+/TaskThreadDemo/build/
+>>>>>>> 21cfdb82a83b3012d78b9245322250c8173facb4
