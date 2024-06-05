@@ -85,6 +85,7 @@
 /EvidenceForFinal/build/
 /MonthlyEvidenceAll/nbproject/private/
 /MonthlyEvidenceAll/build/
+<<<<<<< Updated upstream
 /MidEvidence/nbproject/private/
 /MidEvidence/build/
 /MidQuestion1/nbproject/private/
@@ -93,3 +94,8 @@
 /MidQuestion2/build/
 /MidQuestion3/nbproject/private/
 /MidQuestion3/build/
+=======
+/JavaSwingProjectWithMySql/nbproject/private/
+/JavaSwingProjectWithMySql/build/
+/JavaSwingProjectWithMySql/dist/
+>>>>>>> Stashed changes
