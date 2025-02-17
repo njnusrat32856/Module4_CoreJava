@@ -12,6 +12,7 @@ import java.util.Scanner;
  *
  * @author Naima
  */
+
 public class JavaPractice {
 
     /**
@@ -30,6 +31,8 @@ public class JavaPractice {
         
         Scanner scanner = new Scanner(System.in);
         
+        
+//        Write a Java program to reverse a string without using in-built functions.
         // Prompt the user to enter a string
         System.out.print("Enter a string: ");
         String input = scanner.nextLine();
@@ -40,6 +43,9 @@ public class JavaPractice {
         // Display the reversed string
         System.out.println("Reversed string: " + reversed);
         
+        
+        
+//        Write a program to find duplicate elements in an ArrayList.
         
         // Create an ArrayList to store elements
         ArrayList<Integer> numbers = new ArrayList<>();
@@ -56,6 +62,22 @@ public class JavaPractice {
         
         // Find and print duplicate elements
         findDuplicates(numbers);
+        
+        
+        
+        
+//        Write a Java method to check whether a given number is a palindrome.
+
+        // Prompt the user to enter a number
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        
+        // Check if the number is a palindrome
+        if (isPalindrome(number)) {
+            System.out.println(number + " is a palindrome.");
+        } else {
+            System.out.println(number + " is not a palindrome.");
+        }
         
         scanner.close();
     }
@@ -99,5 +121,23 @@ public class JavaPractice {
         } else {
             System.out.println("Duplicate elements: " + duplicates);
         }
+    }
+    
+    
+    
+    // Method to check if a number is a palindrome
+    public static boolean isPalindrome(int num) {
+        int originalNum = num; // Store the original number
+        int reversedNum = 0;   // Variable to hold the reversed number
+        
+        // Reverse the number
+        while (num > 0) {
+            int digit = num % 10; // Get the last digit
+            reversedNum = reversedNum * 10 + digit; // Build the reversed number
+            num /= 10; // Remove the last digit
+        }
+        
+        // Check if the original number and the reversed number are the same
+        return originalNum == reversedNum;
     }
 }
