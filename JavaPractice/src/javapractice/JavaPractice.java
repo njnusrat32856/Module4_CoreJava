@@ -4,6 +4,8 @@
  */
 package javapractice;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Scanner;
 
 /**
@@ -38,6 +40,23 @@ public class JavaPractice {
         // Display the reversed string
         System.out.println("Reversed string: " + reversed);
         
+        
+        // Create an ArrayList to store elements
+        ArrayList<Integer> numbers = new ArrayList<>();
+        
+        // Prompt the user to enter the number of elements
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        
+        // Input elements into the ArrayList
+        System.out.println("Enter " + n + " integers:");
+        for (int i = 0; i < n; i++) {
+            numbers.add(scanner.nextInt());
+        }
+        
+        // Find and print duplicate elements
+        findDuplicates(numbers);
+        
         scanner.close();
     }
     
@@ -60,5 +79,25 @@ public class JavaPractice {
         }
 
         return reversedStr; // Return the reversed string
+    }
+    
+    
+    public static void findDuplicates(ArrayList<Integer> list) {
+        HashSet<Integer> seen = new HashSet<>();
+        HashSet<Integer> duplicates = new HashSet<>();
+        
+        for (Integer number : list) {
+            // If the number is already in the 'seen' set, it's a duplicate
+            if (!seen.add(number)) {
+                duplicates.add(number);
+            }
+        }
+        
+        // Print the duplicates
+        if (duplicates.isEmpty()) {
+            System.out.println("No duplicate elements found.");
+        } else {
+            System.out.println("Duplicate elements: " + duplicates);
+        }
     }
 }
