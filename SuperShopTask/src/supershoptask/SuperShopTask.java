@@ -39,6 +39,7 @@ public class SuperShopTask {
         
         try {
             
+            // Loop need
             
             System.out.print("Enter your name: ");
             String userName = scanner.nextLine();
