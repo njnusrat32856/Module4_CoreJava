@@ -29,7 +29,7 @@ public class Transaction {
     @Override
     public String toString() {
         
-        return "tid"+ transactionId+"\nUser: " + user +
+        return "tid: "+ transactionId+"\nUser: " + user +
            "\nProduct: " + product.getName() +
            "\nPrice: " + product.getPrice() +
            "\nQuantity: " + product.getQuantity() +
